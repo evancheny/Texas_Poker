@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Texas_Poker</title>
+    <link rel="stylesheet" href="styles/group.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/cards.js"></script>
+</head>
+<body>
+<!--标题区-->
+<div class="g-blk20"></div>
+<div class="g-header">性感荷官 在线发牌程序</div>
+<!--标题区结束-->
+<div class="g-blk20"></div>
+<!--初始化区域-->
+<div class="g-bd">
+
+    <div class="m-init-player-number">
+        <p>玩家数量为</p>
+        <input type="number" id="playerNumber" >
+        <button class="m-init-game" onclick="fInitGame()">游戏初始化</button>
+        <!--游戏初始化，意味着初始化牌，并给玩家发牌-->
+    </div>
+</div>
+<!--初始化区域结束-->
+<!--公共牌展示区域-->
+<div class="g-bd">
+    <div class="m-public-cards">
+        <div class="g-blk20"></div>
+        <p>公共牌展示区域</p>
+        <div class="g-blk20"></div>
+        <textarea name="publicCards" id="publicCards" cols="60" rows="6">
+        </textarea>
+        <div class="g-blk20"></div>
+        <div class="g-blk20"></div>
+    </div>
+</div>
+<!--公共牌展示区域结束-->
+<!--玩家牌型展示区-->
+<div class="g-bd">
+    <div class="m-player-cards">
+        <div class="g-blk20"></div>
+        <p>玩家手牌展示区域</p>
+        <div class="g-blk20"></div>
+        <div id="playerCardsShowArea">
+
+        </div>
+    </div>
+</div>
+<!--玩家牌型展示区结束-->
+
+
+<!--扑克牌操作区域-->
+<div class="g-bd">
+    <div class="g-blk20"></div>
+
+    <div class="m-cards-op">
+        <div class="g-blk20"></div>
+        <p>扑克牌操作区域</p>
+        <div class="g-blk20"></div>
+        <div>
+            <button onclick="fSendPublicCards(1)">发一张公共牌</button>
+            <button onclick="fRestartGame()">洗牌重新开始</button>
+        </div>
+
+    </div>
+
+
+</div>
+<!--扑克牌操作区域结束-->
+
+
+</body>
+</html>

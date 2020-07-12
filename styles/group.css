@@ -1,0 +1,106 @@
+@charset "utf-8";
+/*去掉下面一行注释,可使整个网站群页面变灰*/
+/*html {filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); -webkit-filter: grayscale(100%); }*/
+/*全局样式*/
+body {font-family: "\5FAE\8F6F\96C5\9ED1","\5B8B\4F53",serif; font-size:14px;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0; color:#2b2b2b;}
+table,td,tr,th{font-size:14px;}
+li{list-style-type:none;list-style:none;}
+table{ margin:0 auto;border-spacing:0; border-collapse:collapse; }
+img{border:0;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:14px; font-weight:normal;}
+q:before,q:after {content:'';}   
+abbr,acronym {border:0;}
+address,caption,cite,code,dfn,em,th,var {font-weight:normal; font-style:normal;}   
+a {color:#2b2b2b;text-decoration:none;}
+a:hover {text-decoration:none;}
+input{box-sizing:border-box;vertical-align:middle;}
+input::-webkit-input-placeholder{color:#999;}
+:-moz-placeholder {color:#999;}
+::-moz-placeholder {color:#999;}
+:-ms-input-placeholder {color:#999;}
+.fB{font-weight:bold;}
+.f12px{font-size:12px;}
+.f13px{font-size:13px;}
+.f14px{font-size:14px;}
+.f16px{font-size:16px;}
+.f13B{ font-size:13px; font-weight:bold; }
+.f14B{ font-size:14px; font-weight:bold; }
+.f16B{ font-size:16px; font-weight:bold; }
+.f_red{ color:#FC3804;}
+.f_yellow{ color:#FFEA00;}
+.f_fff{ color:#FFF;}
+.fff{ background:#fff;}
+.ofh{height: auto;overflow: hidden!important;}
+.ofv{height: auto;overflow: visible!important;}
+.left{ float:left;}
+.right{ float:right;}
+.pointer{cursor:pointer;}
+.u-tl{ text-align:left;}
+.u-tr{ text-align:right;}
+.u-tc{ text-align:center}
+.clearBoth{clear:both;}
+.relative{ position:relative;}
+
+/*横向间隔定义*/
+.g-blk0 {clear:both; height:0px; overflow:hidden; display:block;}
+.g-blk1 {clear:both; height:1px; overflow:hidden; display:block;}
+.g-blk2 {clear:both; height:2px; overflow:hidden; display:block;}
+.g-blk3 {clear:both; height:3px; overflow:hidden; display:block;}
+.g-blk4 {clear:both; height:4px; overflow:hidden; display:block;}
+.g-blk5 {clear:both; height:5px; overflow:hidden; display:block;}
+.g-blk6 {clear:both; height:6px; overflow:hidden; display:block;}
+.g-blk7 {clear:both; height:7px; overflow:hidden; display:block;}
+.g-blk8 {clear:both; height:8px; overflow:hidden; display:block;}
+.g-blk9 {clear:both; height:9px; overflow:hidden; display:block;}
+.g-blk10 {clear:both; height:10px; overflow:hidden; display:block;}
+.g-blk12 {clear:both; height:12px; overflow:hidden; display:block;}
+.g-blk13 {clear:both; height:13px; overflow:hidden; display:block;}
+.g-blk15 {clear:both; height:15px; overflow:hidden; display:block;}
+.g-blk18 {clear:both; height:18px; overflow:hidden; display:block;}
+.g-blk20 {clear:both; height:20px; overflow:hidden; display:block;}
+.g-blk22 {clear:both; height:22px; overflow:hidden; display:block;}
+.g-blk24 {clear:both; height:24px; overflow:hidden; display:block;}
+.g-blk26 {clear:both; height:26px; overflow:hidden; display:block;}
+.g-blk28 {clear:both; height:28px; overflow:hidden; display:block;}
+.g-blk30 {clear:both; height:30px; overflow:hidden; display:block;}
+/*纵向间隔定义*/
+.space05{width:0.5em; display:inline-block;}
+.space1{width:1em; display:inline-block;}
+.space2{width:2em; display:inline-block;}
+
+/*内容盒子，主要用于定位好后的Div内部*/
+.m-ct-box1{ padding:1px;}
+.m-ct-box2{ padding:2px;}
+.m-ct-box3{ padding:3px;}
+.m-ct-box4{ padding:4px;}
+.m-ct-box5{ padding:5px;}
+.m-ct-box6{ padding:6px;}
+.m-ct-box7{ padding:7px;}
+.m-ct-box8{ padding:8px;}
+.m-ct-box9{ padding:9px;}
+.m-ct-box12{ padding:12px;}
+.m-ct-box15{ padding:15px;}
+.m-ct-box18{ padding:18px;}
+
+/*文字缩进*/
+.txtind2em{ text-indent:2em;}
+
+/*行高定义*/
+.u-lh140{line-height:140%;}
+.u-lh160{line-height:160%;}/*常用于新闻正文*/
+.u-lh180{line-height:180%;}
+.u-lh200{line-height:200%;}
+.u-lh20px{ line-height:20px;}
+.u-lh23px{ line-height:23px;}
+.u-lh24px{ line-height:24px;}/*常用于新闻列表*/
+.u-lh25px{ line-height:25px;}
+.u-lh32px{ line-height:32px;}
+.u-lh36px{ line-height:36px;}
+.hidden {display:none;}
+.display{display:block;}
+
+
+.line1px{height: 1px;line-height: 1px;border-bottom: dotted 1px #999999;display: block;overflow: hidden;}

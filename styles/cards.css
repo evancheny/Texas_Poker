@@ -1,0 +1,81 @@
+/**
+*@author:Evan
+*@Date: 2020-07-12
+*@time:13:12:40
+*@project:Texas_Poker
+**/
+
+.g-header {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 16px;
+    text-align: center;
+    margin: 0 auto;
+    height: 20px;
+    width: 1000px;
+    max-width: 1000px;
+}
+
+.g-bd {
+    margin: 0 auto;
+    height: auto;
+    width: 1000px;
+    max-width: 1000px;
+    overflow: hidden;
+}
+
+.m-init-player-number {
+    text-align: center;
+}
+
+.m-init-player-number p {
+    height: 24px;
+    line-height: 20px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.m-init-player-number input {
+    line-height: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.m-init-player-number button {
+    line-height: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.m-public-cards {
+    text-align: center;
+}
+
+
+
+.m-player-cards{
+    text-align: center;
+}
+.m-player-cards p{font-weight: bold;font-size: 16px;}
+.u-player-cards{
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+.u-player-cards p{}
+.u-player-cards p.u-cards-detail{opacity: 0;}
+
+
+.m-cards-op{
+    text-align: center;
+}
+.m-cards-op>p{
+    font-size: 16px;
+    font-weight: bold;
+}
+.m-cards-op>div{
+    text-align: center;
+}
