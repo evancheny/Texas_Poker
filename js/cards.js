@@ -4,13 +4,13 @@
  * time:2020-07-12
  * */
 
-var aTypes = ['红桃', '黑桃', '方块', '梅花'], // 花色
-    aPoints = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K',], // 点数
+     // 花色
+var aTypes = ['红桃', '黑桃', '方块', '梅花'],
+    // 点数
+    aPoints = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K',],
     // 德州扑克没有大王小王
     aCards = [],
-    iPlayernumber = 0//玩家数量
-;
-
+    nPlayernumber = 0;//玩家数量
 
 /**
  * 生成一副扑克牌 此时和新买的一样
@@ -25,7 +25,6 @@ function fMakeCards() {
     }
     console.log("生成的扑克牌为:", aCards);
 }
-
 
 /**
  * 洗牌
@@ -60,15 +59,18 @@ function fGiveCards(_start, _aCards_num) {
  * @method fInitGame
  */
 function fInitGame() {
-    iPlayernumber = Number($('#playerNumber').val());
-    console.log("游戏的参与人数是", iPlayernumber);
-    if (iPlayernumber > 1 && iPlayernumber < 10) {
+    nPlayernumber = Number($('#playerNumber').val());
+    aCards.length = 0;
+    $('#publicCards').val('');
+    $('#playerCardsShowArea').empty();
+    console.log("游戏的参与人数是", nPlayernumber);
+    if (nPlayernumber > 1 && nPlayernumber < 10) {
         //生成一副新的扑克牌
         fMakeCards();
         //洗牌
         fWashaCards();
         //给玩家发牌
-        for (let i = 0; i < iPlayernumber; i++) {
+        for (let i = 0; i < nPlayernumber; i++) {
             let _html = '<div class="u-player-cards">' +
                 '<p>玩家' + (i + 1) + '手牌</p>' +
                 '<p class="u-cards-detail">' + fGiveCards(0, 2) + '</p>' +
@@ -95,9 +97,7 @@ function fInitGame() {
  * @param {int} _num 发牌的数量
  */
 function fSendPublicCards(_num) {
-
-    iPlayernumber ? $('#publicCards').val($('#publicCards').val() + fGiveCards(0, 1)) : alert('游戏尚未初始化呢!');
-
+    nPlayernumber ? $('#publicCards').val($('#publicCards').val() + fGiveCards(0, 1)) : alert('游戏尚未初始化呢!');
 }
 
 /**
@@ -105,8 +105,5 @@ function fSendPublicCards(_num) {
  * @method fRestartGame
  */
 function fRestartGame() {
-    aCards.length = 0;
-    $('#publicCards').val('');
-    $('#playerCardsShowArea').empty();
     fInitGame();
 }
